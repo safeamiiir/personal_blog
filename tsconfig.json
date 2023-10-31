@@ -1,6 +1,8 @@
 {
   "extends": "astro/tsconfigs/strict",
+  "display": "theme/newspaper",
   "compilerOptions": {
-    "strictNullChecks": true
+    "types": ["astro/client"],
+    "baseUrl": "."
   }
 }
