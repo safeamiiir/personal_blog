@@ -43,6 +43,9 @@
   content: "\f099";
 }
 
+.fa-linkedin:before {
+  content: "\f08c"; }
+
 .fa-square-twitter:before {
   content: "\f081";
 }
