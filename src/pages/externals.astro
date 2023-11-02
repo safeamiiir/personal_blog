@@ -1,16 +1,16 @@
 ---
 import { readAll } from "../lib/markdoc/read";
-import { project } from "../lib/markdoc/frontmatter.schema";
+import { externals } from "../lib/markdoc/frontmatter.schema";
 import PageLayout from "../layouts/PageLayout.astro";
 import PageMeta from "../components/PageMeta.astro";
 import { SITE_TITLE } from "../config";
 
 const projects = await readAll({
-  directory: "projects",
-  frontmatterSchema: project,
+  directory: "externals",
+  frontmatterSchema: externals,
 });
 
-const sortedProjects = projects
+const sortedExternals = projects
   .filter((p) => p.frontmatter.draft !== true)
   .sort(
     (a, b) =>
@@ -20,13 +20,13 @@ const sortedProjects = projects
 ---
 
 <PageLayout>
-  <PageMeta title={`Projects | ${SITE_TITLE}`} slot="meta" />
+  <PageMeta title={`Externals | ${SITE_TITLE}`} slot="meta" />
   <section slot="main">
     <ul>
       {
-        sortedProjects.map((project) => {
+        sortedExternals.map((external) => {
           const formattedDate = new Date(
-            project.frontmatter.date
+            external.frontmatter.date
           ).toLocaleDateString("en-us", {
             year: "numeric",
             month: "short",
@@ -36,18 +36,18 @@ const sortedProjects = projects
             <li class="grid grid-cols-[1fr] md:grid-cols-[1fr_auto] mb-3 md:gap-2 items-start">
               <div class="title">
                 <a
-                  href={project.frontmatter.url}
+                  href={external.frontmatter.url}
                   target="_blank"
                   class="unset hover:text-text-link"
                 >
-                  <span>{project.frontmatter.title}</span>
+                  <span>{external.frontmatter.title}</span>
                   <span>
                     <i class="ml-1 mr-1 text-[12px] pb-2 fa-solid fa-up-right-from-square" />
                   </span>
                 </a>
               </div>
               <div class="text-text-muted text-sm italic pt-1">
-                <time datetime={project.frontmatter.date.toISOString()}>
+                <time datetime={external.frontmatter.date.toISOString()}>
                   {formattedDate}
                 </time>
               </div>
