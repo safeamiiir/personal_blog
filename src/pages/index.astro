@@ -2,7 +2,7 @@
 import PageMeta from "../components/PageMeta.astro";
 import PageLayout from "../layouts/PageLayout.astro";
 import Intro from "../components/Intro.astro";
-import AboutTheTheme from "../components/AboutTheTheme.astro";
+import AboutMe from "../components/AboutMe.astro";
 import { SITE_TITLE } from "../config";
 ---
 
@@ -10,6 +10,6 @@ import { SITE_TITLE } from "../config";
   <PageMeta title={`${SITE_TITLE} | Web Ninja`} slot="meta" />
   <Fragment slot="main">
     <Intro />
-    <AboutTheTheme />
+    <AboutMe />
   </Fragment>
 </PageLayout>
