@@ -5,4 +5,4 @@ description: This is an introduction to waht I'm about to do with this personal 
 date: 2023-11-02
 ---
 
-It's a beautiful world out there.
+[TBC]

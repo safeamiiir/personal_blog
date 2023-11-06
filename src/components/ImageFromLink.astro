@@ -1,0 +1,38 @@
+---
+import type { ImageMetadata } from "astro";
+import { getImage } from "astro:assets";
+
+
+interface Props {
+    src: URL
+    alt: string;
+}
+
+const { src, alt } = Astro.props;
+
+// console.log('src', src.href)
+// const res = await fetch(src.href);
+// const htmlDocument = parser.parseFromString(res, "text/html");
+// const section = htmlDocument.documentElement.querySelector('meta[property="og:image"]');
+// console.log('section', section)
+
+const mobileImg = await getImage({
+    src: 'https://hcti.io/v1/image/f2695207-5266-4926-bd08-38ec2736c4f6',
+    format: "webp",
+    width: 200,
+    height: 200,
+});
+
+const desktopImg = await getImage({
+    src: 'https://hcti.io/v1/image/f2695207-5266-4926-bd08-38ec2736c4f6',
+    format: "webp",
+    width: 800,
+    height: 200,
+});
+---
+
+<picture>
+    <source media="(max-width: 799px)" srcset={mobileImg.src} />
+    <source media="(min-width: 800px)" srcset={desktopImg.src} />
+    <img src={desktopImg.src} alt={alt} />
+</picture>
