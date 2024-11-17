@@ -2,11 +2,9 @@
 external: false
 draft: false
 title: Khodemon podcast
-description:  This link is to my podcast
-date: 2022-02-22
+description: Amirreza Safehian's talking on an episode of Khodemoon podcast
+date: 2021-11-27
 ---
-
-This is a podcast that I was talking about my experiences in the time,
 
 # About the Podcast
 In this episode of **Khodemoon podcast**, I joined Arash Rasoulzadeh and we had a chat about what it’s like working in big tech companies, like Snappfood from the perspective of a developer working there, sharing insights and experiences.
