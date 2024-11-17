@@ -1,0 +1,53 @@
+---
+import { readOne, readAll } from "../../lib/markdoc/read";
+import { talks } from "../../lib/markdoc/frontmatter.schema";
+import Renderer from "../../components/Renderer.astro";
+import BlogPostMeta from "../../components/BlogPostMeta.astro";
+import ContentLayout from "../../layouts/ContentLayout.astro";
+import { SITE_URL } from "../../config";
+
+export async function getStaticPaths() {
+  const myTalks = await readAll({
+    directory: "talks",
+    frontmatterSchema: talks,
+  });
+
+  // we don't want to generate pages for talks that link to external websites
+  const filteredTalks = myTalks
+    .filter((p) => p.frontmatter.draft !== true)
+    .filter(({ frontmatter }) => !frontmatter.external);
+
+  return filteredTalks.map((talk) => {
+    return { params: { slug: talk.slug } };
+  });
+}
+
+const { slug } = Astro.params;
+if (typeof slug !== "string") {
+  throw Error(`slug should be string. Received: ${slug}`);
+}
+
+const { content, frontmatter } = await readOne({
+  directory: "talks",
+  slug,
+  frontmatterSchema: talks,
+});
+
+const ogImageAbsoluteUrl =
+  frontmatter.external !== true && frontmatter.ogImagePath
+    ? new URL(frontmatter.ogImagePath, SITE_URL).toString()
+    : undefined;
+---
+
+<ContentLayout title={frontmatter.title} date={frontmatter.date}>
+  <!-- I'm using the same Meta as for Blog posts for now-->
+  <BlogPostMeta
+    title={frontmatter.title}
+    description={frontmatter.external ? undefined : frontmatter.description}
+    publishDate={frontmatter.date.toISOString()}
+    pagePath={`/talks/${slug}`}
+    ogImageAbsoluteUrl={ogImageAbsoluteUrl}
+    slot="meta"
+  />
+  <Renderer content={content} slot="content" />
+</ContentLayout>
