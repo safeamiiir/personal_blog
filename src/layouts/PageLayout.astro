@@ -9,6 +9,7 @@
 
 // Import the global.css file here so that it is included on
 import "../styles/global.css";
+import Analytics from '@vercel/analytics/astro'
 
 import GoogleFont from "./GoogleFont.astro";
 import FontAwesome from "./FontAwesome.astro";
@@ -29,6 +30,7 @@ import Header from "../components/Header.astro";
     <GoogleFont />
     <ThemeScript />
     <FontAwesome />
+    <Analytics />
   </head>
 
   <body
