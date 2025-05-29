@@ -4,7 +4,10 @@ draft: false
 title: Introduction to frontend
 description: Introduction to the Frontend course in Shahr-e Kord University
 date: 2021-02-04
+ogImagePath: /images/talks/intro-to-fe_cover_1200*627.png
 ---
+
+![Frontend Course Cover](/images/talks/intro-to-fe_cover_1200*627.png)
 
 This series consists of 10 episodes aimed at teaching the fundamentals of frontend development in Persian. Each episode includes direct links to the videos or related resources.
 

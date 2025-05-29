@@ -27,6 +27,8 @@ All the content is written in markdown (.md) and grouped as `blog` or `projects`
 1. Add a markdoc config. Check out the markdoc config in [src/lib/markdoc/config.ts](src/lib/markdoc/config.ts) to learn how to add custom components.
 2. Add a component to render your custom component. Check out the Renderer in [src/components/Renderer.astro](src/components/Renderer.astro).
 
+If you want to do a blog cover you can use this [link](https://www.simpleimageresizer.com/resize-image-for-social-media) and use 1200*627 image coversion.
+
 ## How do I make it my blog?
 
 Easy.
