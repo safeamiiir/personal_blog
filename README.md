@@ -1,4 +1,4 @@
-# Blogster
+# Amirreza's Blog
 
 Theme: **newspaper**
 

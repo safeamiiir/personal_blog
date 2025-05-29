@@ -3,8 +3,11 @@ external: false
 draft: false
 title: Mastering DevTools - A Hands-On Workshop
 description: A hands-on workshop where we explored Chrome DevTools to inspect, debug, and improve web development workflows.
+ogImageAbsoluteUrl: https://codeyourfuture.io/wp-content/uploads/2024/12/5.jpg
 date: 2024-10-12
 ---
+
+![image](/images/talks/devtools-workshop.png)
 
 On October 12, 2024, I had the opportunity to conduct a hands-on **Chrome DevTools workshop**. This was a practical session aimed at helping trainees unlock the full potential of DevTools for inspecting, debugging, and optimizing their web projects.
 
