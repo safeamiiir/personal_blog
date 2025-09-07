@@ -23,6 +23,7 @@
     "@markdoc/markdoc": "^0.5.4",
     "@tailwindcss/typography": "^0.5.16",
     "@vercel/analytics": "^1.5.0",
+    "@vercel/speed-insights": "^1.2.0",
     "astro": "^5.13.5",
     "astro-markdoc-renderer": "0.0.1-alpha.1",
     "globby": "^14.1.0",
