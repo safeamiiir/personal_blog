@@ -35,5 +35,6 @@
     "prettier-plugin-astro": "^0.14.1",
     "tailwindcss": "3.4.1",
     "typescript": "^5.9.2"
-  }
+  },
+  "packageManager": "pnpm@10.15.1+sha256.8c53af02ae3ec1fb0ae75377f8d4d6217c2d7cbe6f03c16350cabf7493de6eff"
 }
