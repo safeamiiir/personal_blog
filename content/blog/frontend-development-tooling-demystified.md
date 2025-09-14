@@ -21,7 +21,7 @@ Instead, we’ll dissect **libraries, frameworks, bundlers, and build tools** fr
 
 ---
 
-## Libraries: Building Blocks Without Rules  
+## 📚 Libraries: Building Blocks Without Rules  
 
 A [**library**](https://en.wikipedia.org/wiki/Library_(computing)) is a collection of reusable code that solves specific problems. The developer controls when and how to call the library.  
 
@@ -33,7 +33,7 @@ A [**library**](https://en.wikipedia.org/wiki/Library_(computing)) is a collecti
 
 ---
 
-## Frameworks: Batteries Included  
+## 🖼 Frameworks: Batteries Included  
 
 A [**framework**](https://en.wikipedia.org/wiki/Software_framework) provides structure and conventions. It tells you **how** to build your application by bundling multiple solutions together (routing, state management, build, etc.).  
 
@@ -45,7 +45,7 @@ Examples:
 
 ---
 
-## Bundlers: Turning Code into Browser-Ready Assets  
+## 📦 Bundlers: Turning Code into Browser-Ready Assets  
 
 ### Why Do We Need Bundlers?  
 JavaScript was originally meant for small scripts on web pages. As apps grew into hundreds of modules, the browser alone couldn’t handle imports, transformations, or performance optimizations.  
@@ -66,7 +66,7 @@ Without bundlers, you’d need to manually manage `<script>` tags for every file
 
 ---
 
-## Build Tools: The Glue of Modern Frontend Engineering  
+## 🔨 Build Tools: The Glue of Modern Frontend Engineering  
 
 A [**build tool**](https://en.wikipedia.org/wiki/Build_automation) orchestrates the whole development and production process: running the dev server, hot module replacement (HMR), bundling, linting, and testing.  
 
@@ -92,8 +92,6 @@ Think of these tools as **layers**:
 - **Frameworks**: integrate multiple libraries with conventions (Next.js).  
 - **Bundlers**: prepare code for browsers (Webpack, Rspack).  
 - **Build Tools**: orchestrate the full pipeline (Vite, Next.js).  
-
-A simplified diagram (to be drawn, e.g. in draw.io):  
 
 [LINK HERE](https://drive.google.com/file/d/1L59GO7X58R2YXsovZYefrrzuUAbrm1Fx/view?usp=sharing)
 
