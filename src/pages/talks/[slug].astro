@@ -3,7 +3,7 @@ import { readOne, readAll } from "../../lib/markdoc/read";
 import { talks } from "../../lib/markdoc/frontmatter.schema";
 import Renderer from "../../components/Renderer.astro";
 import BlogPostMeta from "../../components/BlogPostMeta.astro";
-import ContentLayout from "../../layouts/ContentLayout.astro";
+import TalkContentLayout from "../../layouts/TalkContentLayout.astro";
 import { SITE_URL } from "../../config";
 
 export async function getStaticPaths() {
@@ -39,7 +39,7 @@ const ogImageAbsoluteUrl =
     : undefined;
 ---
 
-<ContentLayout title={frontmatter.title} date={frontmatter.date}>
+<TalkContentLayout title={frontmatter.title} date={frontmatter.date}>
   <!-- I'm using the same Meta as for Blog posts for now-->
   <BlogPostMeta
     title={frontmatter.title}
@@ -50,4 +50,4 @@ const ogImageAbsoluteUrl =
     slot="meta"
   />
   <Renderer content={content} slot="content" />
-</ContentLayout>
+</TalkContentLayout>
