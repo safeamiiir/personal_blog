@@ -1,23 +1,24 @@
 ---
 /* 
-  This layout is used in 
-  - pages/index.astro
-  - pages/blog.astro
-  - pages/externals.astro
-  - pages/talks.astro
-  - pages/notes.astro
+  This layout is used in pages that render markdoc content
+  - pages/notes/[slug].astro
 */
 
 // Import the global.css file here so that it is included on
 import "../styles/global.css";
-import  SpeedInsights  from "@vercel/speed-insights/astro"
-import Analytics from '@vercel/analytics/astro'
 
 import GoogleFont from "./GoogleFont.astro";
 import FontAwesome from "./FontAwesome.astro";
 import ThemeScript from "./ThemeScript.astro";
 import Favicon from "./Favicon.astro";
 import Header from "../components/Header.astro";
+
+export interface Props {
+  title: string;
+  date: Date;
+}
+
+const { title } = Astro.props;
 ---
 
 <!DOCTYPE html>
@@ -26,14 +27,12 @@ import Header from "../components/Header.astro";
     <!-- Global Metadata -->
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width,initial-scale=1" />
-    <meta name="generator" content="Amirreza's Blog" />
+    <meta name="generator" content="Amirreza's Notes" />
     <Favicon />
     <slot name="meta" />
     <GoogleFont />
     <ThemeScript />
     <FontAwesome />
-    <Analytics />
-    <SpeedInsights />
   </head>
 
   <body
@@ -41,7 +40,13 @@ import Header from "../components/Header.astro";
   >
     <Header />
     <main id="main">
-      <slot name="main" />
+      <section class="prose max-w-none prose-newspaper">
+        <h1 class="
+            m-0 pt-1 mb-[0.375em] 
+            after:mt-6 after:content-[''] after:block after:h-[1px] after:w-[100%] after:border-b-[1px] after:border-current  
+        ">{title}</h1>
+        <slot name="content" />
+      </section>
     </main>
     <style>
       body {
