@@ -22,3 +22,6 @@ pnpm-debug.log*
 
 # VSCode settings
 .vscode/settings.json
+
+# Vercel
+.vercel
