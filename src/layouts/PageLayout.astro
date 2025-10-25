@@ -32,7 +32,6 @@ import Header from "../components/Header.astro";
     <GoogleFont />
     <ThemeScript />
     <FontAwesome />
-    <Analytics />
     <SpeedInsights />
   </head>
 
@@ -42,6 +41,7 @@ import Header from "../components/Header.astro";
     <Header />
     <main id="main">
       <slot name="main" />
+      <Analytics />
     </main>
     <style>
       body {
