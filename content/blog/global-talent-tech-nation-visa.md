@@ -5,7 +5,7 @@ description: "Libraries, Frameworks, Bundlers, and Build Tools in Frontend Engin
 date: 2025-10-25
 ---
 
-## Introduction
+![image](/images/blog/global-talent-tech-nation-visa_cover_1200*627.png)
 
 If you already know the basics of the **UK Global Talent Visa**, this article is for you. I’ll share a quick and practical way to figure out whether the **Tech Nation route** is right for you. This is based entirely on my personal experience.
 
