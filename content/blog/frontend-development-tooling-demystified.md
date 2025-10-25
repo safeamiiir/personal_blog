@@ -1,9 +1,11 @@
 ---
 external: false
-title: "🗜 Frontend devemlopment tooling demistified"
+title: "🗜 Frontend development tooling demystified"
 description: "Libraries, Frameworks, Bundlers, and Build Tools in Frontend Engineering: An Engineering Perspective"
 date: 2025-09-14
 ---
+
+![image](/images/blog/frontend-development-tooling-demystified_cover_1200*627.png)
 
 ## Introduction  
 
