@@ -7,7 +7,7 @@ ogImageAbsoluteUrl: /images/talks/devtools-workshop_cover_1200*627.png
 date: 2024-10-12
 ---
 
-![image](/images/talks/devtools-workshop_cover_1200*627.png)
+![dev toolks workshop cover](/images/talks/devtools-workshop_cover_1200*627.png)
 
 On October 12, 2024, I had the opportunity to conduct a hands-on **Chrome DevTools workshop**. This was a practical session aimed at helping trainees unlock the full potential of DevTools for inspecting, debugging, and optimizing their web projects.
 

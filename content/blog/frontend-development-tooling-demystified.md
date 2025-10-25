@@ -5,7 +5,7 @@ description: "Libraries, Frameworks, Bundlers, and Build Tools in Frontend Engin
 date: 2025-09-14
 ---
 
-![image](/images/blog/frontend-development-tooling-demystified_cover_1200*627.png)
+![Frontend development tooling demystified post cover](/images/blog/frontend-development-tooling-demystified_cover_1200*627.png)
 
 ## Introduction  
 
