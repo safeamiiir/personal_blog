@@ -12,12 +12,12 @@ date: 2025-10-12
 1. Undo latest commit
    `git reset --soft HEAD~1`
 
-2. How to protect a branch? [Ref](https://github.com/orgs/community/discussions/54969#discussioncomment-6361231)
+2. How to protect a branch? [[Ref](https://github.com/orgs/community/discussions/54969#discussioncomment-6361231)]
    - Enable "do not allow bypassing the above settings"
    - Enable "required status checks" and making sure there's at least 1 required status check.
    - Enable "allow specified
    - actors to bypass required pull requests" and specifying the admins
-3. Rename a local branch [Ref](https://www.digitalocean.com/community/cheatsheets/how-to-use-git-a-reference-guide)
+3. Rename a local branch [[Ref](https://www.digitalocean.com/community/cheatsheets/how-to-use-git-a-reference-guide)]
    `git branch -m current-branch-name new-branch-name`
 
 ### General
