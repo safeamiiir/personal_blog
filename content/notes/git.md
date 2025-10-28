@@ -31,5 +31,6 @@ Code Review guide:
 
 Tags:
 
-- If you remove tags on GitHub, the ones on your local stays! regardless of what `git fetch ...` you do. You have to run: `git tag -l | xargs git tag -d`.
-  - `git fetch --prune --tags` didn't do it.
+- If you remove tags on GitHub, the ones on your local stays! regardless of what `git fetch ...` you do you still have to run:
+  `git tag -l | xargs git tag -d`
+  Just `git fetch --prune --tags` didn't do it.
