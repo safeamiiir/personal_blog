@@ -7,6 +7,8 @@ description: List of Git related stuff I need to remember.
 date: 2025-10-12
 ---
 
+A quick note to myself: a list of useful (or easily forgettable) Git commands.
+
 ### Frequent Commands
 
 1. Undo latest commit
