@@ -11,7 +11,7 @@
 // Import the global.css file here so that it is included on
 import "../styles/global.css";
 import  SpeedInsights  from "@vercel/speed-insights/astro"
-import Analytics from '@vercel/analytics/astro'
+import { Analytics } from "@vercel/analytics/react"
 
 import GoogleFont from "./GoogleFont.astro";
 import FontAwesome from "./FontAwesome.astro";
@@ -32,6 +32,7 @@ import Header from "../components/Header.astro";
     <GoogleFont />
     <ThemeScript />
     <FontAwesome />
+    <Analytics/>
     <SpeedInsights />
   </head>
 
@@ -41,7 +42,6 @@ import Header from "../components/Header.astro";
     <Header />
     <main id="main">
       <slot name="main" />
-      <Analytics />
     </main>
     <style>
       body {
