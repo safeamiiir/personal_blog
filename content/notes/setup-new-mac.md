@@ -1,32 +1,42 @@
 ---
 external: false
 draft: false
-title: Setup new Mac
-description: Step by step setup a new Mac system
+title: 🍎 Mac Setup — My Personal Setup Checklist
+description: My personal checklist for setting up a new Mac from scratch.
 date: 2025-10-27
 ---
 
-#### Steps
+A complete personal checklist for configuring a fresh macOS setup with my preferred system settings, apps, and development tools.
 
-- Add keyboard layouts
-  - British
-  - U.S.
-  - Persian - Standard
+### System settings
+
+- Add keyboard layouts `British`, `U.S.`, `Persian - Standard`
+- Change `Keyboard shortcuts` setting: Check the `Input sources` box to use `control` + `Space` to `Select the previous input source`
+- Increase `Mouse` speed to one dot before the Fastest
+- Modify `Desktop and Dock`
+  - Remove App icons in the Dock, and keep the essentials.
+  - Put `Magnification` slider after the middle
+  - Turn off `Show suggested and recent apps in Dock`
+- Optional: I decided not to install a new third part app to handle icons in the bar, but instead I make it emptier by `Command` + `Drag out` the item —which removes it.
+
+### Applications
+
 - Install apps
-  1. Arc
+  1. _Arc_ Browser
      1. Make a new Personal profile
-     2. Add export —From previous Laptop and import password
-     3. Bring pin tabs
-  2. Docker:
-     1. Download and install `.dmg` docker desktop.
-     2. It enables docker in the PATH by default.
-  3. VSCode:
-     1. Make sure you’re signed in to pick up theme and settings.
+     2. Add export —From previous Laptop and import password.
+     3. Bring favourite tabs
+  2. _Docker_
+     1. Download and install `.dmg` docker desktop
+     2. It enables docker in the PATH by default
+  3. _VSCode code editor_
+     1. Make sure you’re signed in to your **GitHub** account pick up theme and settings by clicking `Setting sync is on`
      2. Do: `command` + `p` then `> Shell Command: Install 'code' command in PATH`
   4. Clipboard Manager: `brew install maccy`
 - _Brew_ package manager
   - https://brew.sh/
   - Add brew to the PATH
+- `brew install --cask scroll-reverser`
 - _Fish_ terminal
   - `brew install fish`
   - Switch to fish following [this](https://askubuntu.com/a/26440).
@@ -46,13 +56,16 @@ date: 2025-10-27
   - install `[from script install] fnm` > `fnm install <node-version>` > `corepack enable pnpm`
 - Install Python
   - `brew install pyenv`
-  - Then follow A, B, C, and [D](https://github.com/pyenv/pyenv/wiki#suggested-build-environment).
+  - Then follow A, B, C, and [D](https://github.com/pyenv/pyenv/wiki#suggested-build-environment)
   - Finally make `python` work:
     ```bash
     pyenv install 3.10
     pyenv global 3.10
     ```
-- Give Screen sharing required apps permission: `Settings` > `Privacy & Secrity` > `Screen & System Audio recording` > `+ <app name>` .
+
+### Application permissions
+
+- Give Screen sharing required apps permission: `Settings` > `Privacy & Secrity` > `Screen & System Audio recording` > `+ <app name>`
   - Microsoft Teams
   - Zoom
   - Browsers: Arc, …
