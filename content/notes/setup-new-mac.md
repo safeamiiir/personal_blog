@@ -49,7 +49,7 @@ A complete personal checklist for configuring a fresh macOS setup with my prefer
     - Test SSH connection `ssh -T git@github.com`
     - Also when asked for the fingerprint I’ve added that (the same as public key —without email)
   - Git
-    - `git config --global [user.name](http://user.name/) "Your Name"`
+    - `git config --global user.name "Your Name"`
     - `git config --global user.email "you@example.com"`
 - Install Nodejs
   - Install Node Version Manager using [fnm](https://github.com/Schniz/fnm?tab=readme-ov-file), which is easily _Fish_ compatible
