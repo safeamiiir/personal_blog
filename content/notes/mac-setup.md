@@ -79,7 +79,7 @@ All required setup for me when I start with a new Mac OS installed machine.
       pyenv global 3.10
       ```
   - _pipx: `brew install pipx` (recommended way to install poetry)_
-  - _poertry: `pipx install poetry`_
+  - _poetry: `pipx install poetry`_
 
 ### Application permissions
 
