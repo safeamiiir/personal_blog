@@ -6,7 +6,7 @@ description: My personal checklist for setting up a new Mac from scratch.
 date: 2025-10-27
 ---
 
-A complete personal checklist for configuring a fresh macOS setup with my preferred system settings, apps, and development tools.
+All required setup for me when I start with a new Mac OS installed machine.
 
 ### System settings
 
@@ -26,6 +26,7 @@ A complete personal checklist for configuring a fresh macOS setup with my prefer
      1. Make a new Personal profile
      2. Add export —From previous Laptop and import password.
      3. Bring favourite tabs
+     4. Bring URL bar on top by: `Shift` + `Command` + `D`
   2. _Docker_
      1. Download and install `.dmg` docker desktop
      2. It enables docker in the PATH by default
@@ -55,13 +56,30 @@ A complete personal checklist for configuring a fresh macOS setup with my prefer
   - Install Node Version Manager using [fnm](https://github.com/Schniz/fnm?tab=readme-ov-file), which is easily _Fish_ compatible
   - install `[from script install] fnm` > `fnm install <node-version>` > `corepack enable pnpm`
 - Install Python
-  - `brew install pyenv`
-  - Then follow A, B, C, and [D](https://github.com/pyenv/pyenv/wiki#suggested-build-environment)
-  - Finally make `python` work:
-    ```bash
-    pyenv install 3.10
-    pyenv global 3.10
-    ```
+  - _Pyenv_
+    - `brew install pyenv`
+    - Then follow A, [B](https://github.com/pyenv/pyenv?tab=readme-ov-file#b-set-up-your-shell-environment-for-pyenv), C, and [D](https://github.com/pyenv/pyenv/wiki#suggested-build-environment)
+    - Finally make `python` work:
+      ```bash
+      # A: install Pyenv
+      brew update
+      brew install pyenv
+
+      # B.1: Set up your shell environment for Pyenv
+      set -Ux PYENV_ROOT $HOME/.pyenv
+      test -d $PYENV_ROOT/bin; and fish_add_path $PYENV_ROOT/bin
+      # B.3
+      echo -e '\n# Pyenv \npyenv init - fish | source' >> ~/.config/fish/config.fish
+
+      # C: Restart shell
+      exec "$SHELL"
+
+      # D: Choose, install, and set a python version
+      pyenv install 3.10
+      pyenv global 3.10
+      ```
+  - _pipx: `brew install pipx` (recommended way to install poetry)_
+  - _poertry: `pipx install poetry`_
 
 ### Application permissions
 
