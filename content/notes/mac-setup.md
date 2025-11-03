@@ -14,17 +14,17 @@ All required setup for me when I start with a new Mac OS installed machine.
 - Change `Keyboard shortcuts` setting: Check the `Input sources` box to use `control` + `Space` to `Select the previous input source`
 - Increase `Mouse` speed to one dot before the Fastest
 - Modify `Desktop and Dock`
-  - Remove App icons in the Dock, and keep the essentials.
+  - Remove App icons in the Dock, and keep the essentials
   - Put `Magnification` slider after the middle
   - Turn off `Show suggested and recent apps in Dock`
-- Optional: I decided not to install a new third part app to handle icons in the bar, but instead I make it emptier by `Command` + `Drag out` the item —which removes it.
+- Optional: I decided not to install a new third part app to handle icons in the bar, but instead I make it emptier by `Command` + `Drag out` the item —which removes it
 
 ### Applications
 
 - Install apps
   1. _Arc_ Browser
      1. Make a new Personal profile
-     2. Add export —From previous Laptop and import password.
+     2. Add export —From previous Laptop and import password
      3. Bring favourite tabs
      4. Bring URL bar on top by: `Shift` + `Command` + `D`
   2. _Docker_
@@ -60,6 +60,7 @@ All required setup for me when I start with a new Mac OS installed machine.
     - `brew install pyenv`
     - Then follow A, [B](https://github.com/pyenv/pyenv?tab=readme-ov-file#b-set-up-your-shell-environment-for-pyenv), C, and [D](https://github.com/pyenv/pyenv/wiki#suggested-build-environment)
     - Finally make `python` work:
+
       ```bash
       # A: install Pyenv
       brew update
@@ -78,6 +79,7 @@ All required setup for me when I start with a new Mac OS installed machine.
       pyenv install 3.10
       pyenv global 3.10
       ```
+
   - _pipx: `brew install pipx` (recommended way to install poetry)_
   - _poetry: `pipx install poetry`_
 
@@ -87,3 +89,15 @@ All required setup for me when I start with a new Mac OS installed machine.
   - Microsoft Teams
   - Zoom
   - Browsers: Arc, …
+
+### Persian related
+
+- Persian Fonts
+  - Install the Font on Mac
+    - Download font [Vazirmatn](https://github.com/rastikerdar/vazirmatn)
+    - Unzip the files
+    - Go to `.ttf` files and open them > press _install_
+    - Check `Font Book` they + variants (Regular, Medium, …) should be available
+  - Install the Font on Browser using [Font Ara](https://github.com/mimalef70/fontara) extension
+- Persian Widgets
+  - Install [Roozegar](https://www.notion.so/Mac-Setup-My-Personal-Setup-Checklist-2966b0d6031980ee8d73ff78670d6a68?pvs=21) Calendar from App store
