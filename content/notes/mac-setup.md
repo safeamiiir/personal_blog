@@ -34,6 +34,8 @@ All required setup for me when I start with a new Mac OS installed machine.
      1. Make sure you’re signed in to your **GitHub** account pick up theme and settings by clicking `Setting sync is on`
      2. Do: `command` + `p` then `> Shell Command: Install 'code' command in PATH`
   4. Clipboard Manager: `brew install maccy`
+     1. Recommended way to load the preferences is to use my [dotfile](https://github.com/safeamiiir/dotfiles?tab=readme-ov-file#maccy---clipbard-manager)
+     2. Or you can modify the settings in this way: `defaults write org.p0deje.Maccy windowSize -string "[450, 800]”`
 - _Brew_ package manager
   - https://brew.sh/
   - Add brew to the PATH
