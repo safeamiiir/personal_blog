@@ -1,7 +1,7 @@
 ---
 external: false
 title: "🇬🇧 TLDR; Global Talent Visa -- Tech Nation route"
-description: "Libraries, Frameworks, Bundlers, and Build Tools in Frontend Engineering: An Engineering Perspective"
+description: "A concise, experience-based guide to the UK Global Talent Visa (Tech Nation route) — focused on documents, evidences, and real tips for building a strong case."
 date: 2025-10-25
 ---
 
@@ -22,6 +22,7 @@ This post is **only** about the **Tech Nation route**.
 ## 📘 The One and Only Official Source
 
 Start here: [https://technation.io/global-talent-visa/](https://technation.io/global-talent-visa/). Then click **READ THE GUIDANCE**. It currently redirects to [this Notion guide](https://technation-globaltalentvisa-guide.notion.site/), though it may change, so always begin from the main link.
+`
 
 ### How to Use It
 
@@ -103,8 +104,8 @@ It’s an excellent way to map your pieces of evidence and see what fits where.
 
 ## 🪄 Final Notes from My Experience
 
-1. **Collect everything**. Make a bulk document with *anything* remotely relevant from the last 5 years. You’ll build your case from that.
-2. **Focus on yourself**. This visa is about *you*, not your company. Replace “we” and “our team” with “I” and “me.”
+1. **Collect everything**. Make a bulk document with _anything_ remotely relevant from the last 5 years. You’ll build your case from that.
+2. **Focus on yourself**. This visa is about _you_, not your company. Replace “we” and “our team” with “I” and “me.”
 3. **Tell a consistent story**. Your Personal Statement, CV, Recommendation Letters, and pieces of evidence should reinforce the same narrative.
 4. **Design your pieces of evidence well**. Clarity matters. Combine text, images, and data neatly. Use the “Evidence Description” column in the [checklist spreadsheet](https://docs.google.com/spreadsheets/d/1PbyuokO2h5baY2awsmwHAXWKWYNZBGg0) to make each piece self-explanatory.
 
