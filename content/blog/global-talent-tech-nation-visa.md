@@ -115,3 +115,5 @@ It’s an excellent way to map your pieces of evidence and see what fits where.
 Start from the [official Tech Nation page](https://technation.io/global-talent-visa/). Read the full guidance, learn from real cases, and tell a strong, consistent story that makes your impact clear.
 
 That’s how you make this visa route work for you, confidently and cleanly.
+
+If you’ve read the guidance and this post but still have questions, feel free to [book a meeting with me here](https://calendly.com/safeamiiir/gtvisa-consultancy?back=1&month=2025-11). **⚠️ Disclaimer: This is purely informal support. I don’t make money from this and have no plans to do so.**
