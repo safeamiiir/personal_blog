@@ -1,7 +1,7 @@
 ---
 external: false
 draft: false
-title: Life of a Frontend developer in a deeptech startup
+title: ⚛ Life of a Frontend developer in a deeptech startup
 description: This is a talk Amirreza Safehian gave at a meetup in Software Crafters Cambridge.
 date: 2024-09-11
 ogImagePath: /images/talks/fe-in-deeptech-talk_cover_1200*627.jpg

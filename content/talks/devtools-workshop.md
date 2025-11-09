@@ -1,7 +1,7 @@
 ---
 external: false
 draft: false
-title: Mastering DevTools - A Hands-On Workshop
+title: 🛠 Mastering DevTools - A Hands-On Workshop
 description: A hands-on workshop where we explored Chrome DevTools to inspect, debug, and improve web development workflows.
 ogImageAbsoluteUrl: /images/talks/devtools-workshop_cover_1200*627.png
 date: 2024-10-12
@@ -12,8 +12,9 @@ date: 2024-10-12
 On October 12, 2024, I had the opportunity to conduct a hands-on **Chrome DevTools workshop**. This was a practical session aimed at helping trainees unlock the full potential of DevTools for inspecting, debugging, and optimizing their web projects.
 
 You can find the links to my talk in three different parts:
+
 - Part A: Start of the workshop, set up [Link](https://drive.google.com/file/d/16sNxHGpoxLfWpHdZsN-9ps9Z5OjGIfoJ/view?usp=sharing)
-- Part B: Doing Exercise *Inspect the DOM* [Link](https://drive.google.com/file/d/1F-64VMt5pVFcnz9y9IE3r0W1_fSQDAgL/view?usp=drive_link)
+- Part B: Doing Exercise _Inspect the DOM_ [Link](https://drive.google.com/file/d/1F-64VMt5pVFcnz9y9IE3r0W1_fSQDAgL/view?usp=drive_link)
 - Part C: Debugging the issues [Link](https://drive.google.com/file/d/1KkTRHRR6KJZj_CndKu95PZ2G2QpOsCN2/view?usp=drive_link)
 
 ## Workshop Highlights

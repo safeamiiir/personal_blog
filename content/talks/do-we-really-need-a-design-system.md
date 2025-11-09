@@ -1,7 +1,7 @@
 ---
 external: false
 draft: false
-title: Do we really need a design system?
+title: 🎨 Do we really need a design system?
 description: This is a talk Amirreza Safehian gave at a meetup in Javascript Cambridge.
 date: 2023-11-03
 ogImagePath: /images/talks/design-system-talk_cover_1200*627.png

@@ -1,7 +1,7 @@
 ---
 external: false
 draft: false
-title: Introduction to frontend
+title: 📖 Introduction to frontend
 description: Introduction to the Frontend course in Shahr-e Kord University
 date: 2021-02-04
 ogImagePath: /images/talks/intro-to-fe_cover_1200*627.png
@@ -31,4 +31,5 @@ This series consists of 10 episodes aimed at teaching the fundamentals of fronte
 The rest to be uploaded
 
 ## About This Series
+
 If you are interested in web development and just starting out, this course is a great first step in learning frontend development. I hope you enjoy this series and use it to build exciting projects!
