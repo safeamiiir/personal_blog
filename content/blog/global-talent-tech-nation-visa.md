@@ -116,5 +116,5 @@ Start from the [official Tech Nation page](https://technation.io/global-talent-v
 
 That’s how you make this visa route work for you, confidently and cleanly.
 
-**⚠️ Disclaimer: This is purely informal support. I don’t make money from this and have no plans to do so.**
-If you’ve read the guidance and this post but still have questions, feel free to [book a meeting with me](https://calendly.com/safeamiiir/gtvisa-consultancy?back=1&month=2025-11).
+**⚠️ Disclaimer: This is purely informal support. I don’t make money from this and have no plans to do so.** \
+If you’ve read the guidance and this post but still have questions, feel free to [book a meeting with me](https://calendly.com/safeamiiir/gtvisa-consultancy).
