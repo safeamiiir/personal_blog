@@ -12,6 +12,7 @@ import FontAwesome from "./FontAwesome.astro";
 import ThemeScript from "./ThemeScript.astro";
 import Favicon from "./Favicon.astro";
 import Header from "../components/Header.astro";
+import Giscus from "../components/Giscus.astro";
 // import ContentFooter from "../components/ContentFooter.astro";
 
 export interface Props {
@@ -53,6 +54,7 @@ const formattedDate = new Date(date).toLocaleDateString("en-us", {
         ">{title}</h1>
         <time class="block mb-[2em] text-text-muted">{formattedDate}</time>
         <slot name="content" />
+        <Giscus />
       </section>
     </main>
     <!-- <ContentFooter /> -->
