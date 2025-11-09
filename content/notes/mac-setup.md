@@ -59,8 +59,8 @@ All required setup for me when I start with a new Mac OS installed machine.
   - install `[from script install] fnm` > `fnm install <node-version>` > `corepack enable pnpm`
 - Install Python
   - _Pyenv_
-    - Start with step A: `brew install pyenv`
-    - Then follow [B](https://github.com/pyenv/pyenv?tab=readme-ov-file#b-set-up-your-shell-environment-for-pyenv), C, and [D](https://github.com/pyenv/pyenv/wiki#suggested-build-environment)
+    - Start with step [A](https://github.com/pyenv/pyenv?tab=readme-ov-file#a-getting-pyenv): `brew install pyenv`
+    - Then follow [B](https://github.com/pyenv/pyenv?tab=readme-ov-file#b-set-up-your-shell-environment-for-pyenv), [C](https://github.com/pyenv/pyenv?tab=readme-ov-file#c-restart-your-shell), and [D](https://github.com/pyenv/pyenv/wiki#suggested-build-environment)
     - Finally make `python` work
     - The gist:
 
