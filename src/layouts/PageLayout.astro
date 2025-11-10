@@ -33,6 +33,7 @@ import Header from "../components/Header.astro";
     <ThemeScript />
     <FontAwesome />
     <SpeedInsights />
+    <Analytics />
   </head>
 
   <body
@@ -41,7 +42,6 @@ import Header from "../components/Header.astro";
     <Header />
     <main id="main">
       <slot name="main" />
-      <Analytics/>
     </main>
     <style>
       body {
