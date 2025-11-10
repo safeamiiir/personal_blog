@@ -11,6 +11,9 @@ const redirectUrl =
   <PageMeta title={`${SITE_TITLE} | watches`} slot="meta" />
   <div slot="main" class="prose dark:prose-invert max-w-none">
     <p>Redirecting...</p>
-    {window.location.replace(redirectUrl)}
+
+    <script define:vars={{ redirectUrl }}>
+      window.location.href = redirectUrl;
+    </script>
   </div>
 </PageLayout>
