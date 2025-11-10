@@ -1,21 +1,18 @@
 ---
-const redirectUrl = "https://safeamiiir.notion.site/Watches-1f26b0d6031980a29840e0e4b6cd2715";
+import PageLayout from "../layouts/PageLayout.astro";
+
+const redirectUrl =
+  "https://safeamiiir.notion.site/Watches-1f26b0d6031980a29840e0e4b6cd2715";
 ---
 
-<html>
-  <head>
-    <title>Redirecting...</title>
-  </head>
-  <body>
+<PageLayout>
+  <div slot="main" class="prose dark:prose-invert max-w-none">
     <p>Redirecting...</p>
-    
-    <script>
+
+    <script define:vars={{ redirectUrl }}>
       import { inject } from "@vercel/analytics";
       inject();
-    </script>
-    
-    <script define:vars={{ redirectUrl }}>
       window.location.href = redirectUrl;
     </script>
-  </body>
-</html>
+  </div>
+</PageLayout>
