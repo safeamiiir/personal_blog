@@ -1,8 +1,9 @@
 ---
+import Signature from "../components/Signature.astro";
 ---
 
 <section class="mb-8">
-  <div class="mb-6">
+  <div class="mb-6 relative">
     <h1
       class="font-bold uppercase text-center text-4xl md:text-5xl xtracking-tighter py-6 overflow-hidden"
     >
@@ -39,7 +40,14 @@
         <span>Linkedin</span>
       </a>
     </div>
-    <!-- <p class="text-2xl pb-4">Web Developer. OSS Wizard. Blogger.</p> -->
+    <!-- Mobile: starting from 250px to 442px -->
+    <span class="hidden min-[350px]:block min-[442px]:hidden absolute -right-3 top-9">
+      <Signature />
+    </span>
+    <!-- Not mobile: starting from 442px to ... -->
+    <span class="hidden min-[442px]:block absolute -right-6 bottom-3.5">
+      <Signature />
+    </span>
   </div>
   <div>
     <p class="mb-8">
