@@ -1,18 +1,16 @@
 ---
+import PageMeta from "src/components/PageMeta.astro";
 import PageLayout from "../layouts/PageLayout.astro";
+import { SITE_TITLE } from "../config";
 
 const redirectUrl =
   "https://safeamiiir.notion.site/Watches-1f26b0d6031980a29840e0e4b6cd2715";
 ---
 
 <PageLayout>
+  <PageMeta title={`${SITE_TITLE} | watches`} slot="meta" />
   <div slot="main" class="prose dark:prose-invert max-w-none">
     <p>Redirecting...</p>
-
-    <script define:vars={{ redirectUrl }}>
-      import { inject } from "@vercel/analytics";
-      inject();
-      window.location.href = redirectUrl;
-    </script>
+    {window.location.replace(redirectUrl)}
   </div>
 </PageLayout>
