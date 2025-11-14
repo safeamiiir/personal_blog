@@ -12,6 +12,12 @@ const baseSchema = z.object({
     invalid_type_error:
       "date must be written in yyyy-mm-dd format without quotes: For example, Jan 22, 2000 should be written as 2000-01-22.",
   }),
+  // optional last_modified_date: if present must be a Date
+  last_modified_date: z.optional(z.date({
+    required_error: "Required frontmatter missing: last_modified_date",
+    invalid_type_error:
+      "last_modified_date must be written in yyyy-mm-dd format without quotes: For example, Jan 22, 2000 should be written as 2000-01-22.",
+  })),
 });
 
 /*
