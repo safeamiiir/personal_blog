@@ -18,10 +18,17 @@ import Giscus from "../components/Giscus.astro";
 export interface Props {
   title: string;
   date: Date;
+  last_modified_date?: Date;
 }
 
-const { title, date } = Astro.props;
+const { title, date, last_modified_date } = Astro.props;
+console.log('Astro.props', Astro.props)
 const formattedDate = new Date(date).toLocaleDateString("en-us", {
+  year: "numeric",
+  month: "short",
+  day: "numeric",
+});
+const formattedLastModifiedDate = last_modified_date && new Date(last_modified_date).toLocaleDateString("en-us", {
   year: "numeric",
   month: "short",
   day: "numeric",
@@ -52,7 +59,13 @@ const formattedDate = new Date(date).toLocaleDateString("en-us", {
             m-0 pt-1 mb-[0.375em] 
             after:mt-6 after:content-[''] after:block after:h-[1px] after:w-[100%] after:border-b-[1px] after:border-current  
         ">{title}</h1>
-        <time class="block mb-[2em] text-text-muted">{formattedDate}</time>
+        <time class="block mb-[.2em] text-text-muted">{formattedDate}</time>
+        {formattedLastModifiedDate && (
+          <div class="flex items-center gap-2 mb-[2em] text-text-muted text-sm italic">
+            <p class="m-0">Last Modified:</p>
+            <time>{formattedLastModifiedDate}</time>
+          </div>
+        )}
         <slot name="content" />
         <Giscus />
       </section>
