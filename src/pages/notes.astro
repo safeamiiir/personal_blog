@@ -4,6 +4,7 @@ import { notes } from "../lib/markdoc/frontmatter.schema";
 import PageLayout from "../layouts/PageLayout.astro";
 import PageMeta from "../components/PageMeta.astro";
 import { SITE_TITLE } from "../config";
+import NotesFooter from "src/components/NotesFooter.astro";
 
 const posts = await readAll({
   directory: "notes",
@@ -60,5 +61,6 @@ const sortedPosts = posts
         })
       }
     </ul>
+    <NotesFooter/>
   </section>
 </PageLayout>
