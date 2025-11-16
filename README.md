@@ -1,52 +1,69 @@
-# Amirreza's Blog
+<!-- AI Generated readme -->
 
-Theme: **newspaper**
+# Amirreza's Personal Blog
 
-Blogster is a collection of beautiful, accessible and performant blog templates built with [Astro](https://astro.build) and [Markdoc](https://markdoc.dev).
+A fast, content-focused personal blog built with Astro and Tailwind CSS.
 
-Check out the demo here - [Blogster newspaper template](https://blogster-newspaper.netlify.app).
+This repository contains the source for the blog: posts, notes, and site configuration.
 
-## Newspaper Template
+## Features
 
-A beautiful, performant and accessible theme built with [Tailwind](https://tailwindcss.com).
+- Minimal, content-first layout powered by `Astro`.
+- Styling with `Tailwind CSS` and site-level utilities in `styles/global.css`.
+- Content stored in the `content/` folder (blog posts, notes, talks, externals).
+- Markdoc/MD support via `src/lib/markdoc` for frontmatter and custom rendering.
+- Client embeds: Giscus comments, YouTube/Twitter embeds, GitHub Gists, and more.
 
-- **Fast**. Fast by default. Astro websites are engineered to be fast and load before you could blink, even when not cached.
-- **Dark mode**. All themes have light/dark mode built-in.
-- **Mobile first**. Responsive and loads fast in all devices.
-- **Accessible**. A well thought out semantic and accessible content.
-- **Perfect lighthouse score.** 100 across the board.
-- **Easy content authoring**. Author content using markdown (`.md`) from your code editor or directly in GitHub.
-- **Extended markdown with [Markdoc](https://markdoc.dev).** Type-safe custom components like YouTube embed, Twitter embed (or anything you want really) in your markdown (`.md`) files.
-- **RSS feed**. Your blog has an RSS feed setup that can be accessed at `/rss.xml`.
-- **SEO**. All pages are setup with all the SEO you might need.
+## Repo structure (important paths)
 
-## How do I add content?
+- `content/` : All site content (blog, notes, talks, externals).
+- `src/` : Site source (components, layouts, pages, and build helpers).
+- `public/` : Static assets served as-is (images, fonts, favicon, etc.).
+- `styles/` : Global CSS and Tailwind utilities.
+- `astro.config.mjs`, `package.json`, `tailwind.config.cjs` : project configuration.
 
-All the content is written in markdown (.md) and grouped as `blog` or `projects` in the `content` directory. All the default markdown syntax will work. You also have a few example custom markdown elements like _YouTube embed_, _Twitter embed_, etc. You can create your own custom components too in two easy steps.
+## Quick Start (local development)
 
-1. Add a markdoc config. Check out the markdoc config in [src/lib/markdoc/config.ts](src/lib/markdoc/config.ts) to learn how to add custom components.
-2. Add a component to render your custom component. Check out the Renderer in [src/components/Renderer.astro](src/components/Renderer.astro).
+Prerequisites:
 
-If you want to do a blog cover you can use this [link](https://www.simpleimageresizer.com/resize-image-for-social-media) and use 1200*627 image coversion.
+- Node.js (LTS recommended)
+- `pnpm` package manager (this repo includes a `pnpm-lock.yaml`)
 
-## How do I make it my blog?
+Install dependencies and start the dev server:
 
-Easy.
+```fish
+pnpm install
+pnpm dev
+```
 
-- All content is static and everything is straight forward. Change whatever you need to change.
-- Delete or update the content in `content/{content-group}`. `content-group` could be `blog`, `projects` or `anything`.
-- (Optional) If you need more content types like _Notes_, just create a new dir in `content` and add a new frontmatter validator like [src/lib/markdoc/blog/frontmatter](src/lib/markdoc/blog/frontmatter).
+Open the site at `http://localhost:3000` (Astro will show the exact URL in the console).
 
-## How do I deploy?
+Build for production:
 
-`yarn build` will generate a static website in `dist` dir. You can host it with any static hosting. If you need a recommendation, check out [Netlify](netlify.com).
+```fish
+pnpm build
+pnpm preview
+```
 
-## Credit
+## Content authoring
 
-Thanks to other templates that inspired this theme.
+- Add blog posts to `content/blog/` as Markdown or Markdoc files.
+- Notes go under `content/notes/` and talks under `content/talks/`.
+- Follow the existing frontmatter patterns (see `content/blog/hello-world.md`) and `src/lib/markdoc/frontmatter.schema.ts` for schema details.
 
-- [Official Astro Blog template](https://github.com/withastro/astro/tree/main/examples/blog)
+Media and images:
+
+- Put images used in posts into `public/images/` (e.g., `public/images/blog/`). Use the `ImageFromLink.astro` component or static paths in posts.
+
+## Deploy
+
+- This site can be deployed to any static-hosting platform that supports Astro builds (Vercel, Netlify, Cloudflare Pages, etc.).
+- Typical flow: `pnpm build` → push `dist/` to the chosen host, or connect the repo and use the provider's build step `pnpm build`.
 
 ## License
 
-MIT © [Dinesh Pandiyan](https://github.com/flexdinesh)
+This repository includes a `LICENSE` file at the project root. See it for license details.
+
+## Author
+
+Amirreza Safehian — personal blog maintained at this repository.
