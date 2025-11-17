@@ -30,6 +30,7 @@ const { meta, og, twitter } = getPageMeta({
 <!-- Primary Meta Tags -->
 <title>{meta.title}</title>
 <meta name="title" content={meta.title} />
+<meta property="og:site_name" content={meta.title}>
 {meta.description && <meta name="description" content={meta.description} />}
 
 <!-- Open Graph / Facebook -->
