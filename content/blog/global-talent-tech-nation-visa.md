@@ -1,12 +1,12 @@
 ---
 external: false
-title: "🇬🇧 TLDR; Global Talent Visa -- Tech Nation route"
+title: "🇬🇧 TL;DR Global Talent Visa -- Tech Nation route"
 description: "A concise, experience-based guide to the UK Global Talent Visa (Tech Nation route) — focused on documents, evidences, and real tips for building a strong case."
 date: 2025-10-25
 last_modified_date: 2025-11-14
 ---
 
-![TLDR; Global Talent Visa -- Tech Nation route post cover](/images/blog/global-talent-tech-nation-visa_cover_1200*627.png)
+![TL;DR Global Talent Visa -- Tech Nation route post cover](/images/blog/global-talent-tech-nation-visa_cover_1200*627.png)
 
 If you already know the basics of the **UK Global Talent Visa**, this article is for you. I’ll share a quick and practical way to figure out whether the **Tech Nation route** is right for you or not. This is based entirely on my personal experience.
 
