@@ -5,6 +5,8 @@ description: Learn how to easily integrate Giscus, a lightweight and privacy-foc
 date: 2025-11-23
 ---
 
+![giscus post cover](/images/blog/giscus_cover_1200*627.png)
+
 Adding comments to a static blog doesn't have to be complicated. **Giscus** is a lightweight, privacy-focused comment system that uses GitHub Discussions as the backend. Here's how I implemented it in this blog.
 
 ## What is Giscus and why I chose it?
