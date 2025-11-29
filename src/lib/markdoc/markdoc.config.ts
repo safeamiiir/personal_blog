@@ -43,7 +43,7 @@ export const config: Config = {
     },
     summary: {
       render: "summary",
-      children: nodes.document.children,
+      children: nodes.strong.children,
     },
     sup: {
       render: "sup",
