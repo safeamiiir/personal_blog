@@ -85,7 +85,7 @@ for _ in range(5):
 
 When you run this code, you'll see the LED stay constantly **ON** for 2.5 seconds (5 × 0.5), then turn off. This happens because each iteration turns the LED on, waits, then immediately turns it off before starting the next iteration. The LED appears constantly on because it's being turned on again immediately after being turned off.
 
-You can find this code in my [Raspberry Pi playground repository](https://github.com/safeamiiir/raspberry_playground/blob/main/pico/my_constant_on_loop.py).
+You can find this code in my repo: [my_constant_on_loop.py](https://github.com/safeamiiir/raspberry_playground/blob/main/pico/my_constant_on_loop.py).
 
 **What this teaches us:** The loop executes so quickly between iterations that there's no visible gap. You can see when the loop **ends** because the LED finally stays off.
 
@@ -142,7 +142,7 @@ for _ in range(5):
 
 This time you'll see the LED stay constantly **OFF** for 2.5 seconds (5 × 0.5) with **very quick blinks** between each iteration. These quick blinks reveal something fascinating: the moment when one iteration ends and the next begins!
 
-You can find this code in my [Raspberry Pi playground repository](https://github.com/safeamiiir/raspberry_playground/blob/main/pico/my_almost_no_blink_loop.py).
+You can find this code in my repo: [my_almost_no_blink_loop.py](https://github.com/safeamiiir/raspberry_playground/blob/main/pico/my_almost_no_blink_loop.py).
 
 **What this teaches us:** Even though the LED is turned on then immediately off, you can still see brief flashes. This is a hardware constraint - the LED can't respond instantaneously. These blinks show you the exact moments when the loop transitions between iterations.
 
@@ -198,7 +198,7 @@ for _ in range(5):
     sleep(0.5)
 ```
 
-**This is the right way of thinking about loops!** You can find this exact code in my [Raspberry Pi playground repository](https://github.com/safeamiiir/raspberry_playground/blob/main/pico/my_flashing_pico_led.py).
+**This is the right way of thinking about loops!** You can find this code in my repo: [my_flashing_pico_led.py](https://github.com/safeamiiir/raspberry_playground/blob/main/pico/my_flashing_pico_led.py).
 
 With this version, you'll see:
 
