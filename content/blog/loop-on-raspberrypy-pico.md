@@ -65,6 +65,10 @@ Follow the official guide: [Getting Started with Pico](https://projects.raspberr
 
 Thonny will automatically detect your Pico and offer to install MicroPython for you - much easier!
 
+### Installing the picozero Library
+
+To control the onboard LED easily, you'll also need to install the `picozero` library. Follow the steps described here: [Using picozero](https://projects.raspberrypi.org/en/projects/introduction-to-the-pico/4) to get the picozero library working on your Pico. This library provides simple functions to control the onboard LED and other components.
+
 ## Seeing a For Loop in Action: Three Different Modes
 
 Now for the fun part! Let's explore three different ways to visualise a for loop, each revealing something different about how loops execute.
