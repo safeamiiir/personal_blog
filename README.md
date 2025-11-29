@@ -1,28 +1,23 @@
-<!-- AI Generated readme -->
-
 # Amirreza's Personal Blog
 
-A fast, content-focused personal blog built with Astro and Tailwind CSS.
+This is a personal blog where I write about tech-related work and hobbies.\
+Please have a look and visit it at https://safeamii.ir.
 
-This repository contains the source for the blog: posts, notes, and site configuration.
+It's built with [Astro](https://astro.build), started from using [Blogster](https://github.com/flexdinesh/blogster) theme.
 
-## Features
+## 📝 Content & Media
 
-- Minimal, content-first layout powered by `Astro`.
-- Styling with `Tailwind CSS` and site-level utilities in `styles/global.css`.
-- Content stored in the `content/` folder (blog posts, notes, talks, externals).
-- Markdoc/MD support via `src/lib/markdoc` for frontmatter and custom rendering.
-- Client embeds: Giscus comments, YouTube/Twitter embeds, GitHub Gists, and more.
+- `content/` - All site content (blog, notes, talks, externals)
+- `public/images/` - Media files and images for posts
 
-## Repo structure (important paths)
+## ⚙️ Technical Structure
 
-- `content/` : All site content (blog, notes, talks, externals).
-- `src/` : Site source (components, layouts, pages, and build helpers).
-- `public/` : Static assets served as-is (images, fonts, favicon, etc.).
-- `styles/` : Global CSS and Tailwind utilities.
-- `astro.config.mjs`, `package.json`, `tailwind.config.cjs` : project configuration.
+- `src/` - Site source (components, layouts, pages, and build helpers)
+- `public/` - Static assets (fonts, favicon, etc.)
+- `styles/` - Global CSS and Tailwind utilities
+- `astro.config.mjs`, `package.json`, `tailwind.config.cjs` - Project configuration
 
-## Quick Start (local development)
+## 🚀 Quick Start (local development)
 
 Prerequisites:
 
@@ -36,8 +31,6 @@ pnpm install
 pnpm dev
 ```
 
-Open the site at `http://localhost:3000` (Astro will show the exact URL in the console).
-
 Build for production:
 
 ```fish
@@ -45,25 +38,23 @@ pnpm build
 pnpm preview
 ```
 
-## Content authoring
+## ✍️ Content authoring
 
 - Add blog posts to `content/blog/` as Markdown or Markdoc files.
 - Notes go under `content/notes/` and talks under `content/talks/`.
 - Follow the existing frontmatter patterns (see `content/blog/hello-world.md`) and `src/lib/markdoc/frontmatter.schema.ts` for schema details.
+- Put images used in posts into `public/images/` (e.g., `public/images/blog/`).
 
-Media and images:
+## 🚀 Deploy
 
-- Put images used in posts into `public/images/` (e.g., `public/images/blog/`). Use the `ImageFromLink.astro` component or static paths in posts.
+This blog can be deployed to any static hosting service that supports Astro builds. This repo is currently deployed on [Vercel](https://vercel.com), but you can also use Cloudflare Pages, Netlify, or other platforms.
 
-## Deploy
+To deploy on Vercel:
 
-- This site can be deployed to any static-hosting platform that supports Astro builds (Vercel, Netlify, Cloudflare Pages, etc.).
-- Typical flow: `pnpm build` → push `dist/` to the chosen host, or connect the repo and use the provider's build step `pnpm build`.
+1. Connect your GitHub repo to Vercel
+2. Vercel will automatically detect Astro and use `pnpm build`
+3. Deploy happens automatically on every push to main
 
-## License
-
-This repository includes a `LICENSE` file at the project root. See it for license details.
-
-## Author
+## 👨‍💻 Author
 
 Amirreza Safehian — personal blog maintained at this repository.
