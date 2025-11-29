@@ -1,7 +1,7 @@
 ---
 external: false
-title: 🍓 Raspberry Pi Pico, Turn an LED on and learn how for loops work
-description: Learn how to visualise a for loop in action using a Raspberry Pi Pico microcontroller by making an LED blink
+title: 🍓 Raspberry Pi Pico, Turn an LED on and learn how "for loops" work
+description: Learn how to visualise a "for loop" in action using a Raspberry Pi Pico microcontroller by making an LED blink
 date: 2025-11-29
 ---
 
