@@ -4,8 +4,10 @@ draft: false
 title: "🪡 CareerSol x Amirreza Safehian Interview"
 description: What Makes You Hireable in Tech (Beyond Tools & Frameworks) – In this CareerSol interview, senior software engineer Amirreza Safehian breaks down the skills, mindset and portfolio strategies that actually move a tech career forward in 2025.
 date: 2025-12-03
-ogImagePath: /images/talks/what-makes-you-hireable-in-tech_cover_1200*627.jpg
+ogImagePath: /images/talks/what-makes-you-hireable-in-tech_og_1200*627.jpg
 ---
+
+![Khodemoon Podcast Cover](/images/talks/what-makes-you-hireable-in-tech_cover_1200*627.jpg)
 
 For years, the stereotypical image of someone working in tech was a hoodie in a dark room, but most people in this industry actually spend far more time in conversations, problem-solving sessions and cross-functional work than silently typing away.
 Many aspiring or early-career professionals still believe success is about collecting tools and stacking their CV with technical buzzwords, yet progression is rarely blocked by a lack of hard skills; it’s usually held back by missing soft skills, ownership and the ability to handle ambiguity.
