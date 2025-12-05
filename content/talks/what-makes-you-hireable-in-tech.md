@@ -15,7 +15,6 @@ Many aspiring or early-career professionals still believe success is about colle
 In this conversation, [CareerSol](https://www.linkedin.com/company/careersol/) sits down with Amirreza Safehian, who started as a front-end developer and is now a senior software engineer at a leading UK quantum computing start-up, to unpack what truly makes you hireable in tech today.
 He shares practical ways he stays intentional about his growth, how people with no experience can build a portfolio that actually demonstrates ability, and what makes a CV and cover letter stand out instead of blending in.
 
-If you’re starting out or aiming for your next step in tech, you don’t need more tools — you need clarity, intention and the skills that make your work visible and impactful.
 [Read the article on Linkedin](https://www.linkedin.com/pulse/getting-tech-moving-up-what-hiring-teams-actually-look-soleymanian-jc1ne).
 
 {% youtube url="https://www.youtube.com/embed/RzMxG_c4E80?si=QtqQm6BZYp6VrBp6" label="What makes you Hireable in Tech – Amirreza Safehian is sharing his experience with CareerSol" /%}
