@@ -19,9 +19,10 @@ export interface Props {
   title: string;
   date: Date;
   last_modified_date?: Date;
+  ai_generated?: boolean;
 }
 
-const { title, date, last_modified_date } = Astro.props;
+const { title, date, last_modified_date, ai_generated } = Astro.props;
 console.log('Astro.props', Astro.props)
 const formattedDate = new Date(date).toLocaleDateString("en-us", {
   year: "numeric",
@@ -58,7 +59,12 @@ const formattedLastModifiedDate = last_modified_date && new Date(last_modified_d
         <h1 class="
             m-0 pt-1 mb-[0.375em] 
             after:mt-6 after:content-[''] after:block after:h-[1px] after:w-[100%] after:border-b-[1px] after:border-current  
-        ">{title}</h1>
+        ">
+          {title}
+          {ai_generated && (
+            <span class="inline-block align-middle ml-2 text-[10px] uppercase tracking-wider bg-zinc-200 dark:bg-zinc-700 text-zinc-600 dark:text-zinc-300 px-2 py-0.5 rounded-full font-bold border border-zinc-300 dark:border-zinc-600" style="vertical-align: middle;">AI Generated</span>
+          )}
+        </h1>
         <time class="block mb-[.2em] text-text-muted">{formattedDate}</time>
         {formattedLastModifiedDate && (
           <div class="flex items-center gap-2 mb-[2em] text-text-muted text-sm italic">

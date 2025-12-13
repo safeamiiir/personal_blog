@@ -54,6 +54,9 @@ const sortedPosts = posts
                     {post.frontmatter.title}
                   </a>
                 )}
+                {post.frontmatter.ai_generated && (
+                  <span class="inline-block align-middle ml-2 text-[10px] uppercase tracking-wider bg-zinc-200 dark:bg-zinc-700 text-zinc-600 dark:text-zinc-300 px-2 py-0.5 rounded-full font-bold border border-zinc-300 dark:border-zinc-600">AI Generated</span>
+                )}
               </div>
               <div class="text-text-muted text-sm italic pt-1">
                 <time datetime={post.frontmatter.date.toISOString()}>
