@@ -5,7 +5,7 @@ description: A personal, experimental take on how AI is reshaping software engin
 date: 2026-09-06
 ---
 
-![How’s the future of software engineering look like post cover](/images/blog/software-engineering-future-with-ai_cover_1200*627.jpg)
+![How’s the future of software engineering look like post cover](/images/blog/software-engineering-future-with-ai_cover_1200*627.jpeg)
 
 Whenever I'm asking the same question "How do you see the future of Software engineering?" from the people I know and whose seniority I respect, mostly I get a short, but smart, answer from them: "I don't know".
 
