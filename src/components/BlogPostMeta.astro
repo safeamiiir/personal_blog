@@ -12,6 +12,7 @@ export interface Props {
   title?: string;
   description?: string;
   publishDate: string;
+  modifiedDate?: string;
   pagePath?: string;
   ogImageAbsoluteUrl?: string;
   ogImageAltText?: string;
@@ -23,6 +24,7 @@ const {
   title,
   description,
   publishDate,
+  modifiedDate,
   pagePath,
   ogImageAbsoluteUrl,
   ogImageAltText,
@@ -30,10 +32,13 @@ const {
   ogImageHeight,
 } = Astro.props;
 
+const pageUrl = pagePath ? new URL(pagePath, SITE_URL).toString() : undefined;
+
 const { meta, og, twitter } = getBlogPostMeta({
   title: title || SITE_TITLE,
   description: description || SITE_DESCRIPTION,
-  pageUrl: pagePath ? new URL(pagePath, SITE_URL).toString() : undefined,
+  canonicalUrl: pageUrl,
+  pageUrl,
   authorName: MY_NAME,
   publishDate,
   ogImageAbsoluteUrl,
@@ -43,6 +48,18 @@ const { meta, og, twitter } = getBlogPostMeta({
   siteOwnerTwitterHandle: TWITTER_HANDLE,
   contentAuthorTwitterHandle: TWITTER_HANDLE,
 });
+
+const jsonLd = {
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  headline: meta.title,
+  description: meta.description,
+  url: pageUrl,
+  image: ogImageAbsoluteUrl,
+  datePublished: publishDate,
+  dateModified: modifiedDate || publishDate,
+  author: { "@type": "Person", name: MY_NAME, url: SITE_URL },
+};
 ---
 
 <!-- Primary Meta Tags -->
@@ -87,4 +104,4 @@ const { meta, og, twitter } = getBlogPostMeta({
     <meta property="twitter:image:alt" content={twitter.imageAlt} />
   )
 }
-<!-- {twitter.url && <meta property="twitter:url" content={twitter.url} />} -->
+<script type="application/ld+json" set:html={JSON.stringify(jsonLd)} />

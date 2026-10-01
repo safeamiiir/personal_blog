@@ -3,9 +3,10 @@ external: false
 title: "0️⃣ Unwanted zero"
 description: "Prevent wrong rerendering zeros in the code"
 date: 2024-02-11
+ogImagePath: "/images/blog/unwanted-zeros_cover_1200x627.png"
 ---
 
-![Unwanted zero post cover](/images/blog/unwanted-zeros_cover_1200*627.png)
+![Unwanted zero post cover](/images/blog/unwanted-zeros_cover_1200x627.png)
 
 Have you ever experienced an extra unwanted zero, as number zero, during the loading for instance in your code?
 

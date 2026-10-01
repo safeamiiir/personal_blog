@@ -3,11 +3,11 @@ external: false
 draft: false
 title: 🛠 Mastering DevTools - A Hands-On Workshop
 description: A hands-on workshop where we explored Chrome DevTools to inspect, debug, and improve web development workflows.
-ogImageAbsoluteUrl: /images/talks/devtools-workshop_cover_1200*627.png
 date: 2024-10-12
+ogImagePath: "/images/talks/devtools-workshop_cover_1200x627.png"
 ---
 
-![dev toolks workshop cover](/images/talks/devtools-workshop_cover_1200*627.png)
+![dev toolks workshop cover](/images/talks/devtools-workshop_cover_1200x627.png)
 
 On October 12, 2024, I had the opportunity to conduct a hands-on **Chrome DevTools workshop**. This was a practical session aimed at helping trainees unlock the full potential of DevTools for inspecting, debugging, and optimizing their web projects.
 

@@ -4,10 +4,10 @@ draft: false
 title: 🎙 Khodemon podcast
 description: Amirreza Safehian's talking on an episode of Khodemoon podcast
 date: 2021-11-27
-ogImagePath: /images/talks/khodemoon-podcast_cover_1200*627.png
+ogImagePath: /images/talks/khodemoon-podcast_cover_1200x627.png
 ---
 
-![Khodemoon Podcast Cover](/images/talks/khodemoon-podcast_cover_1200*627.png)
+![Khodemoon Podcast Cover](/images/talks/khodemoon-podcast_cover_1200x627.png)
 
 ## About the Podcast
 

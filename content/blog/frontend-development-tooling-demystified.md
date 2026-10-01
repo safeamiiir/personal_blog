@@ -3,9 +3,10 @@ external: false
 title: "🗜 Frontend development tooling demystified"
 description: "Libraries, Frameworks, Bundlers, and Build Tools in Frontend Engineering: An Engineering Perspective"
 date: 2025-09-14
+ogImagePath: "/images/blog/frontend-development-tooling-demystified_cover_1200x627.png"
 ---
 
-![Frontend development tooling demystified post cover](/images/blog/frontend-development-tooling-demystified_cover_1200*627.png)
+![Frontend development tooling demystified post cover](/images/blog/frontend-development-tooling-demystified_cover_1200x627.png)
 
 ## Introduction  
 

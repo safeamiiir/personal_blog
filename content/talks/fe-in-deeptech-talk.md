@@ -4,10 +4,10 @@ draft: false
 title: ⚛ Life of a Frontend developer in a deeptech startup
 description: This is a talk Amirreza Safehian gave at a meetup in Software Crafters Cambridge.
 date: 2024-09-11
-ogImagePath: /images/talks/fe-in-deeptech-talk_cover_1200*627.jpg
+ogImagePath: /images/talks/fe-in-deeptech-talk_cover_1200x627.jpg
 ---
 
-![Frontend in Deeptech Talk Cover](/images/talks/fe-in-deeptech-talk_cover_1200*627.jpg)
+![Frontend in Deeptech Talk Cover](/images/talks/fe-in-deeptech-talk_cover_1200x627.jpg)
 
 On September 11, 2024, I had the privilege of speaking at the [**Software Crafters Cambridge**](https://www.meetup.com/cambridge-software-crafters) meetup, held in the Cambridge Science Park. The talk revolved around my journey and experiences as a **Frontend Developer** in a quantum computing startup—a domain where cutting-edge science meets real-world application.
 
