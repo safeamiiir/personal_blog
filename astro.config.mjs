@@ -31,6 +31,7 @@ if (isBuild) {
 export default defineConfig({
   server: { port: SERVER_PORT },
   site: BASE_URL,
+  trailingSlash: "never",
   integrations: [
     sitemap(),
     tailwind({

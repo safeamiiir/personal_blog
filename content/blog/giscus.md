@@ -3,9 +3,10 @@ external: false
 title: 💬 Giscus, Add a Comment Section to Your Blog in Minutes
 description: Learn how to easily integrate Giscus, a lightweight and privacy-focused comment system, into your blog. This quick guide will walk you through the steps to set it up and start engaging with your readers.
 date: 2025-11-23
+ogImagePath: "/images/blog/giscus_cover_1200x627.png"
 ---
 
-![giscus post cover](/images/blog/giscus_cover_1200*627.png)
+![giscus post cover](/images/blog/giscus_cover_1200x627.png)
 
 Adding comments to a static blog doesn't have to be complicated. **Giscus** is a lightweight, privacy-focused comment system that uses GitHub Discussions as the backend. Here's how I implemented it in this blog.
 

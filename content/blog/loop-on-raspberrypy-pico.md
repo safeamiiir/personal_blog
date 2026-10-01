@@ -3,9 +3,10 @@ external: false
 title: 🍓 Raspberry Pi Pico, Turn an LED on and learn how "for loops" work
 description: Learn how to visualise a "for loop" in action using a Raspberry Pi Pico microcontroller by making an LED blink
 date: 2025-11-29
+ogImagePath: "/images/blog/raspberry_pico_cover_1200x627.jpg"
 ---
 
-![giscus post cover](/images/blog/raspberry_pico_cover_1200*627.jpg)
+![giscus post cover](/images/blog/raspberry_pico_cover_1200x627.jpg)
 
 Have you ever wondered what a for loop actually "looks like" when it's running? With the Raspberry Pi Pico microcontroller, you can literally see your code execute by making an LED blink with each iteration of a loop. It's a fantastic way to understand programming concepts in a tangible, visual way.
 

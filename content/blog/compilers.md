@@ -5,9 +5,10 @@ title: "⚙️ Compilers, LLVM, MLIR, and the Journey to xDSL (Part 1)"
 description: "A brief history of compilation tooling, LLVM, MLIR, Domain-Specific Languages, and an introduction to the xDSL framework."
 ai_generated: true
 date: 2026-03-24
+ogImagePath: "/images/blog/compilers_cover_1200x627.jpeg"
 ---
 
-![Compilers, LLVM, MLIR, and the Journey to xDSL post cover](/images/blog/compilers_cover_1200*627.jpeg)
+![Compilers, LLVM, MLIR, and the Journey to xDSL post cover](/images/blog/compilers_cover_1200x627.jpeg)
 
 ## 📖 Introduction
 
