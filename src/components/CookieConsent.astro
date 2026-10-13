@@ -1,0 +1,84 @@
+---
+/*
+  Asks once whether third-party embeds (YouTube, X, CodePen, GitHub Gist)
+  may load. Accept loads them everywhere; reject keeps the click-to-load
+  placeholders from ExternalEmbed.astro. Nothing loads before a choice.
+*/
+---
+
+<div
+  id="cookie-consent"
+  role="region"
+  aria-label="Cookie consent"
+  class="hidden fixed bottom-4 left-4 right-4 z-50 mx-auto flex max-w-xl flex-col gap-3 rounded border border-gray-300 bg-white p-3 text-xs shadow-lg sm:flex-row sm:items-center dark:border-gray-600 dark:bg-neutral-800"
+>
+  <p class="m-0">
+    <strong>Fancy some cookies?</strong> Not mine, I don't bake. They come
+    with the embedded videos, tweets and code.
+    <a href="/privacy">Details</a>
+  </p>
+  <div class="flex shrink-0 gap-2">
+    <button
+      type="button"
+      data-choice="rejected"
+      class="rounded border border-black px-3 py-1.5 font-bold text-black dark:border-white dark:text-white"
+      >Reject</button
+    >
+    <button
+      type="button"
+      data-choice="accepted"
+      class="accept rounded bg-black px-3 py-1.5 font-bold text-white dark:bg-white dark:text-black"
+      >Accept <span
+        aria-hidden="true"
+        class="cookie inline-block"
+        >🍪</span
+      ></button
+    >
+  </div>
+</div>
+
+<style>
+  /* A little wobble so Accept is fun, without making it more prominent than Reject. */
+  .accept:hover .cookie,
+  .accept:focus-visible .cookie {
+    animation: cookie-wobble 0.6s ease-in-out;
+  }
+
+  @keyframes cookie-wobble {
+    0%, 100% { transform: rotate(0); }
+    25% { transform: rotate(-20deg); }
+    50% { transform: rotate(15deg) scale(1.15); }
+    75% { transform: rotate(-10deg); }
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .accept .cookie {
+      animation: none !important;
+    }
+  }
+</style>
+
+<script>
+  import { CONSENT_EVENT, getConsent, setConsent, type Consent } from "../lib/consent";
+
+  const banner = document.getElementById("cookie-consent");
+
+  if (banner) {
+    // Toggle the class, not the hidden attribute: Tailwind's `flex` overrides it.
+    banner.classList.toggle("hidden", getConsent() !== null);
+
+    banner.querySelectorAll<HTMLButtonElement>("[data-choice]").forEach((button) =>
+      button.addEventListener("click", () =>
+        setConsent(button.dataset.choice as Consent)
+      )
+    );
+
+    // Hide once chosen; show again if the choice is reset from /privacy.
+    window.addEventListener(CONSENT_EVENT, (event) => {
+      banner.classList.toggle(
+        "hidden",
+        (event as CustomEvent<Consent>).detail !== null
+      );
+    });
+  }
+</script>

@@ -6,6 +6,8 @@
 
 // Import the global.css file here so that it is included on
 import "../styles/global.css";
+import CookieConsent from "../components/CookieConsent.astro";
+import Footer from "../components/Footer.astro";
 
 import GoogleFont from "./GoogleFont.astro";
 import FontAwesome from "./FontAwesome.astro";
@@ -48,6 +50,7 @@ const { title } = Astro.props;
         <Giscus />
       </section>
     </main>
+    <Footer />
     <style>
       body {
         display: grid;
@@ -62,5 +65,6 @@ const { title } = Astro.props;
         grid-area: main;
       }
     </style>
+    <CookieConsent />
   </body>
 </html>

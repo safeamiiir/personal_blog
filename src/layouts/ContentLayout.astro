@@ -6,6 +6,8 @@
 
 // Import the global.css file here so that it is included on
 import "../styles/global.css";
+import CookieConsent from "../components/CookieConsent.astro";
+import Footer from "../components/Footer.astro";
 
 import GoogleFont from "./GoogleFont.astro";
 import FontAwesome from "./FontAwesome.astro";
@@ -76,6 +78,7 @@ const formattedLastModifiedDate = last_modified_date && new Date(last_modified_d
         <Giscus />
       </section>
     </main>
+    <Footer />
     <!-- <ContentFooter /> -->
     <style>
       body {
@@ -91,5 +94,6 @@ const formattedLastModifiedDate = last_modified_date && new Date(last_modified_d
         grid-area: main;
       }
     </style>
+    <CookieConsent />
   </body>
 </html>
