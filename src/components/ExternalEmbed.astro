@@ -1,0 +1,87 @@
+---
+/*
+  Consent-gated wrapper for third-party embeds (YouTube, Twitter, CodePen,
+  GitHub Gist). Nothing inside the slot touches the third party until the
+  reader accepts in the cookie banner (CookieConsent.astro) or clicks
+  "Load" on this embed, so no IP address is shared and no cookies are set
+  without consent.
+
+  The slot is rendered inside a <template>. On click, its content is
+  cloned into the page and any <script is:inline> tags are recreated so
+  the browser runs them.
+*/
+type Props = {
+  provider: string;
+  privacyUrl: string;
+  label: string;
+};
+
+const { provider, privacyUrl, label } = Astro.props;
+---
+
+<external-embed class="block not-prose my-6">
+  <div
+    data-placeholder
+    class="flex flex-col items-center justify-center gap-3 rounded border-2 border-dashed border-gray-300 dark:border-gray-600 p-6 text-center text-sm"
+  >
+    <p>
+      This {label} is hosted by {provider}. Loading it shares your IP address
+      with {provider} and may set cookies. See their
+      <a href={privacyUrl} target="_blank" rel="noopener noreferrer"
+        >privacy policy</a
+      >.
+    </p>
+    <button
+      type="button"
+      data-load
+      class="rounded bg-black px-4 py-2 font-bold text-white dark:bg-white dark:text-black"
+    >
+      Load {label}
+    </button>
+  </div>
+  <template><slot /></template>
+</external-embed>
+
+<script>
+  import { CONSENT_EVENT, getConsent } from "../lib/consent";
+
+  class ExternalEmbed extends HTMLElement {
+    connectedCallback() {
+      if (getConsent() === "accepted") {
+        this.load();
+        return;
+      }
+      window.addEventListener(CONSENT_EVENT, this.onConsent);
+      this.querySelector("[data-load]")?.addEventListener("click", () =>
+        this.load()
+      );
+    }
+
+    disconnectedCallback() {
+      window.removeEventListener(CONSENT_EVENT, this.onConsent);
+    }
+
+    onConsent = (event: Event) => {
+      if ((event as CustomEvent).detail === "accepted") this.load();
+    };
+
+    load() {
+      window.removeEventListener(CONSENT_EVENT, this.onConsent);
+      const template = this.querySelector("template");
+      if (!template) return;
+      const content = template.content.cloneNode(true) as DocumentFragment;
+      // Scripts cloned from a <template> are inert, so recreate them.
+      content.querySelectorAll("script").forEach((old) => {
+        const script = document.createElement("script");
+        for (const attr of Array.from(old.attributes)) {
+          script.setAttribute(attr.name, attr.value);
+        }
+        script.textContent = old.textContent;
+        old.replaceWith(script);
+      });
+      this.replaceChildren(content);
+    }
+  }
+
+  customElements.define("external-embed", ExternalEmbed);
+</script>

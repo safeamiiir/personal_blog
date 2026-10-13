@@ -17,4 +17,4 @@ He shares practical ways he stays intentional about his growth, how people with 
 
 [Read the article on Linkedin](https://www.linkedin.com/pulse/getting-tech-moving-up-what-hiring-teams-actually-look-soleymanian-jc1ne).
 
-{% youtube url="https://www.youtube.com/embed/RzMxG_c4E80?si=QtqQm6BZYp6VrBp6" label="What makes you Hireable in Tech – Amirreza Safehian is sharing his experience with CareerSol" /%}
+{% youtube url="https://www.youtube-nocookie.com/embed/RzMxG_c4E80" label="What makes you Hireable in Tech – Amirreza Safehian is sharing his experience with CareerSol" /%}
