@@ -6,6 +6,7 @@
 
 // Import the global.css file here so that it is included on
 import "../styles/global.css";
+import CookieConsent from "../components/CookieConsent.astro";
 
 import GoogleFont from "./GoogleFont.astro";
 import FontAwesome from "./FontAwesome.astro";
@@ -74,3 +75,4 @@ const formattedDate = new Date(date).toLocaleDateString("en-us", {
     </style>
   </body>
 </html>
+    <CookieConsent />

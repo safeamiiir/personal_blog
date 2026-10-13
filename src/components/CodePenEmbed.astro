@@ -1,4 +1,6 @@
 ---
+import ExternalEmbed from "./ExternalEmbed.astro";
+
 type Props = {
   url: string;
   title: string;
@@ -6,18 +8,25 @@ type Props = {
   data_user: string;
 };
 
-const { url, title, data_slug_hash, data_user } = Astro.props;
+const { title, data_slug_hash, data_user } = Astro.props;
+
+// Plain iframe instead of CodePen's ei.js script, so less third-party code runs on the page.
+const embedUrl = `https://codepen.io/${data_user}/embed/${data_slug_hash}?default-tab=html%2Cresult`;
 ---
 
-<p
-  class="codepen"
-  data-height="300"
-  data-default-tab="html,result"
-  data-slug-hash={data_slug_hash}
-  data-user={data_user}
-  style="height: 300px; box-sizing: border-box; display: flex; align-items: center; justify-content: center; border: 2px solid; margin: 1em 0; padding: 1em;"
+<ExternalEmbed
+  provider="CodePen"
+  privacyUrl="https://blog.codepen.io/documentation/privacy/"
+  label="CodePen"
 >
-  <span><a href={url}>{title}</a></span>
-</p>
-<script async defer src="https://cpwebassets.codepen.io/assets/embed/ei.js"
-></script>
+  <iframe
+    class="w-full"
+    height="300"
+    style="border: 0;"
+    src={embedUrl}
+    title={title}
+    loading="lazy"
+    allowfullscreen
+  >
+  </iframe>
+</ExternalEmbed>

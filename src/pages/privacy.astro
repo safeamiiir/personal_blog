@@ -1,0 +1,90 @@
+---
+import PageMeta from "../components/PageMeta.astro";
+import PageLayout from "../layouts/PageLayout.astro";
+import { SITE_TITLE } from "../config";
+---
+
+<PageLayout>
+  <PageMeta title={`Privacy | ${SITE_TITLE}`} slot="meta" />
+  <div slot="main" class="prose dark:prose-invert max-w-none">
+    <h1>Privacy</h1>
+    <p class="text-gray-600 dark:text-gray-400">Last updated: October 13, 2026</p>
+
+    <p>
+      This is a personal blog. It doesn't set any cookies of its own, doesn't show
+      ads and doesn't sell or share data. Here's everything that touches
+      your data when you visit.
+    </p>
+
+    <h2>Hosting and analytics</h2>
+    <p>
+      The site is hosted on <a href="https://vercel.com/legal/privacy-policy">Vercel</a>.
+      Like any web server, Vercel processes your IP address to deliver the
+      pages.
+    </p>
+    <p>
+      I use <a href="https://vercel.com/docs/analytics/privacy-policy">Vercel Web Analytics</a>
+      and <a href="https://vercel.com/docs/speed-insights/privacy-policy">Speed Insights</a>
+      to see which pages are read and how fast they load. They don't use
+      cookies or store anything on your device. Visitors are counted using
+      an anonymous hash that resets every day, so you can't be recognised
+      across days or sites, and IP addresses aren't stored. The legal basis is
+      my legitimate interest in understanding how the blog is used.
+    </p>
+
+    <h2>Comments</h2>
+    <p>
+      Comments use <a href="https://giscus.app">giscus</a>, which stores them
+      in GitHub Discussions. The comments section loads from giscus.app, so
+      giscus and GitHub receive your IP address when you open a post. giscus
+      doesn't track you or use analytics; see its
+      <a href="https://github.com/giscus/giscus/blob/main/PRIVACY-POLICY.md">privacy policy</a>.
+      If you sign in to comment, a session token is saved in your browser's
+      local storage so you stay signed in. Comments are public and are stored
+      by GitHub under your GitHub account.
+    </p>
+
+    <h2>Embedded content</h2>
+    <p>
+      Some posts embed videos (YouTube), tweets (X) and code (CodePen,
+      GitHub Gist). These services receive your IP address and may set
+      their own cookies, so they only load if you accept in the cookie
+      banner. If you reject, each one shows a <em>Load</em> button instead,
+      so you can still load a single embed.
+    </p>
+    <p>
+      <button
+        type="button"
+        id="reset-consent"
+        class="rounded bg-black px-3 py-1.5 text-sm font-bold text-white dark:bg-white dark:text-black"
+        >Change cookie choice</button
+      >
+    </p>
+
+    <h2>Stored on your device</h2>
+    <p>
+      Your light/dark theme choice is kept in session storage, which is
+      cleared when you close the tab. Your accept or reject choice for
+      embedded content is kept in local storage so the banner doesn't ask
+      again.
+      Anything else is set by the third-party services described above, not
+      by this site.
+    </p>
+
+    <h2>Your rights and contact</h2>
+    <p>
+      Under the GDPR you can ask what data I hold about you, and ask me to
+      correct or delete it. Since I don't collect personal data myself,
+      there's usually nothing to hand over, but feel free to get in touch:
+      <a href="mailto:safehiana@gmail.com">safehiana@gmail.com</a>.
+    </p>
+  </div>
+</PageLayout>
+
+<script>
+  import { setConsent } from "../lib/consent";
+
+  document
+    .getElementById("reset-consent")
+    ?.addEventListener("click", () => setConsent(null));
+</script>

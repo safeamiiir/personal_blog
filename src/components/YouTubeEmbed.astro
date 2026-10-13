@@ -1,20 +1,32 @@
 ---
+import ExternalEmbed from "./ExternalEmbed.astro";
+
 type Props = {
   url: string;
   label: string;
 };
 
 const { url, label } = Astro.props;
+
+// Use YouTube's privacy-enhanced domain and drop share-tracking params.
+const embedUrl = new URL(url.replace("www.youtube.com", "www.youtube-nocookie.com"));
+embedUrl.searchParams.delete("si");
 ---
 
-<div>
-  <iframe
-    class="aspect-video w-full"
-    src={url}
-    title={label}
-    frame-border="0"
-    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-    allowfullscreen
-  >
-  </iframe>
-</div>
+<ExternalEmbed
+  provider="YouTube"
+  privacyUrl="https://policies.google.com/privacy"
+  label="video"
+>
+  <div>
+    <iframe
+      class="aspect-video w-full"
+      src={embedUrl.toString()}
+      title={label}
+      frame-border="0"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+      allowfullscreen
+    >
+    </iframe>
+  </div>
+</ExternalEmbed>
